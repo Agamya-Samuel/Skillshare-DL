@@ -56,15 +56,14 @@ def manage_task(course_url):
     download_instance.start_download()
 
     # Zips the course Folder
-    zip_fname = zip_folder(
+    zipped_file_path = zip_folder(
         course_folder_name = download_instance.title,
         course_id = download_instance.course_id
         )
-    print(f'{zip_fname = }')
-    zip_file_path = os.path.join(download_instance.download_path, zip_fname)
+    print(f'{zipped_file_path = }')
 
     # Uploads the .Zip to respective File Servers
-    anon_url, pd_url = upload_file(fpath=zip_file_path)
+    anon_url, pd_url = upload_file(fpath=zipped_file_path)
 
     # Deletes .Zip file and Course Folder from Local Disk
     delete(folder_path=download_instance.download_path)
