@@ -1,5 +1,3 @@
-from . import SKILLSHARE_COOKIE
-
 import requests, sys, re, os
 import cloudscraper
 from slugify import slugify
