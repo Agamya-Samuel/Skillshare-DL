@@ -2,7 +2,7 @@ import os
 
 from script.skillshare_rss import organise_course_urls
 
-from bot import (DL_LINKS_MASTER_MONGODB_URL, DL_LINKS_MASTER_MONGODB_DATABASE_NAME, DL_LINKS_MASTER_MONGODB_COLLECTION_NAME)
+from script import (DL_LINKS_MASTER_MONGODB_URL, DL_LINKS_MASTER_MONGODB_DATABASE_NAME, DL_LINKS_MASTER_MONGODB_COLLECTION_NAME)
 from bot.skillshare_with_classes import Skillshare
 from bot.db_handler import (is_duplicate, connect_db, find_document, insert_document)
 from bot.zipfiles import zip_folder
