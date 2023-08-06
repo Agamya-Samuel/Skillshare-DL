@@ -65,7 +65,7 @@ def format_document(id, url, name, user, date, anon, pd):
         '_id': int(id),
         'url': str(url),
         'name': str(name),
-        'user': int(user),
+        'user': user,
         'date': date,
         'anon': str(anon),
         'pd': str(pd)
